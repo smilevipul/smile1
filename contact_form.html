@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Forms</title>
+    
+    <style>
+        body {
+            text-align: left;
+            margin: 10px 15px;
+            padding: 10px;
+            background-color: lightgray;
+            font-family: 'Lobster', cursive;
+        }
+
+        .head {
+            text-align: center;
+            background-color: green;
+            color: aliceblue;
+            height: 100%;
+            width: 100%;
+        }
+        .form {
+            background-color: darkgray;
+            background-image:image-set();
+            margin: 10px solid rgb(237, 18, 84);
+            width: 50%;
+            margin: 2%;
+            padding: 8%;
+           
+        }
+
+        .form p,input[type="submit"] {
+            margin: 10px;
+            font-size: medium;
+        }
+        input[type="submit"]{
+            background-color: rgba(30, 212, 30, 0.738);
+            width: 95%;
+            color: aliceblue;
+            cursor: pointer;
+            
+        }
+        input[type="submit"]:hover{
+            background-color:darkgreen ;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <h1 class="head">Contact Form</h1>
+            <hr>
+            <p>First Name *</p>
+            <p>
+
+                <input type="text" name="name" id="name" placeholder="Enter your first name" required>
+            </p>
+            <p>Last Name</p>
+            <p>
+
+                <input type="text" name="name" id="name" placeholder="Enter your last name">
+            </p>
+            <p>
+                Email:*
+            </p>
+            <p><input type="email" name="email" id="email" placeholder="Enter your email" required></p>
+            <p>Message:</p>
+            <p><textarea name="message" id="messase" cols="30" rows="10" placeholder="Enter Your Message"
+                    required></textarea></p>
+            <p>Subject: </p>
+            <p><input type="text" name="subject" id="subject"></p>
+            <input type="submit" value="Submit Now">
+        </form>
+    </div>
+</body>
+
+</html>
